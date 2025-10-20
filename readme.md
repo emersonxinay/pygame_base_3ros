@@ -1,5 +1,5 @@
 # Código base videojuego 
-```bash
+```py
 # ============================================================================
 # ARCHIVO: init_pygame.py
 # ============================================================================
@@ -49,7 +49,8 @@ def establecer_icono(ruta_icono):
     icono = pygame.image.load(ruta_icono)
     pygame.display.set_icon(icono)
 
-
+```
+```py
 # ============================================================================
 # ARCHIVO: recursos.py
 # ============================================================================
@@ -92,7 +93,9 @@ def cargar_recursos():
     }
     return recursos
 
+```
 
+```py
 # ============================================================================
 # ARCHIVO: variables.py
 # ============================================================================
@@ -146,7 +149,8 @@ def inicializar_variables():
     
     return estado
 
-
+```
+```py
 # ============================================================================
 # ARCHIVO: eventos.py
 # ============================================================================
@@ -198,7 +202,8 @@ def crear_proyectil(estado):
     )
     proyectiles.append((proyectil, VELOCIDAD_PROYECTIL))
 
-
+```
+```py
 # ============================================================================
 # ARCHIVO: movimientos.py
 # ============================================================================
@@ -244,7 +249,8 @@ def aplicar_limites_ventana(jugador):
     jugador.x = max(0, min(jugador.x, ANCHO_VENTANA - jugador.width))
     jugador.y = max(0, min(jugador.y, ALTO_VENTANA - jugador.height))
 
-
+```
+```py
 # ============================================================================
 # ARCHIVO: enemigo.py
 # ============================================================================
@@ -291,7 +297,8 @@ def actualizar_enemigos(enemigos):
         if enemigo.y > ALTO_VENTANA:
             enemigos.remove((enemigo, vel))
 
-
+```
+```py
 # ============================================================================
 # ARCHIVO: actualizacion.py
 # ============================================================================
@@ -344,7 +351,8 @@ def detectar_colisiones(proyectiles, enemigos):
         if enemigo in enemigos:
             enemigos.remove(enemigo)
 
-
+```
+```py
 # ============================================================================
 # ARCHIVO: renderizado.py
 # ============================================================================
@@ -406,7 +414,8 @@ def dibujar_enemigos(ventana, imagen_enemigo, enemigos):
     for enemigo, _ in enemigos:
         ventana.blit(imagen_enemigo, (enemigo.x, enemigo.y))
 
-
+```
+```py
 # ============================================================================
 # ARCHIVO: principal.py
 # ============================================================================
