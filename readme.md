@@ -210,7 +210,7 @@ def crear_proyectil(estado):
     proyectiles.append((proyectil, VELOCIDAD_PROYECTIL))
 
 ```
-## ARCHIVO: eventos.py
+## ARCHIVO: movimientos.py
 
 ```py
 # ============================================================================
