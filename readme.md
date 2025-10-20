@@ -259,7 +259,7 @@ def aplicar_limites_ventana(jugador):
     jugador.y = max(0, min(jugador.y, ALTO_VENTANA - jugador.height))
 
 ```
-## ARCHIVO: eventos.py
+## ARCHIVO: enemigo.py
 ```py
 # ============================================================================
 # ARCHIVO: enemigo.py
