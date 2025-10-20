@@ -1,4 +1,6 @@
 # Código base videojuego 
+## ARCHIVO: init_pygame.py
+
 ```py
 # ============================================================================
 # ARCHIVO: init_pygame.py
@@ -50,6 +52,8 @@ def establecer_icono(ruta_icono):
     pygame.display.set_icon(icono)
 
 ```
+## ARCHIVO: recursos.py
+
 ```py
 # ============================================================================
 # ARCHIVO: recursos.py
@@ -94,6 +98,7 @@ def cargar_recursos():
     return recursos
 
 ```
+## ARCHIVO: variables.py
 
 ```py
 # ============================================================================
@@ -150,6 +155,8 @@ def inicializar_variables():
     return estado
 
 ```
+## ARCHIVO: eventos.py
+
 ```py
 # ============================================================================
 # ARCHIVO: eventos.py
@@ -203,6 +210,8 @@ def crear_proyectil(estado):
     proyectiles.append((proyectil, VELOCIDAD_PROYECTIL))
 
 ```
+## ARCHIVO: eventos.py
+
 ```py
 # ============================================================================
 # ARCHIVO: movimientos.py
@@ -250,6 +259,7 @@ def aplicar_limites_ventana(jugador):
     jugador.y = max(0, min(jugador.y, ALTO_VENTANA - jugador.height))
 
 ```
+## ARCHIVO: eventos.py
 ```py
 # ============================================================================
 # ARCHIVO: enemigo.py
@@ -298,6 +308,8 @@ def actualizar_enemigos(enemigos):
             enemigos.remove((enemigo, vel))
 
 ```
+## ARCHIVO: actualizacion.py
+
 ```py
 # ============================================================================
 # ARCHIVO: actualizacion.py
@@ -352,6 +364,8 @@ def detectar_colisiones(proyectiles, enemigos):
             enemigos.remove(enemigo)
 
 ```
+## ARCHIVO: renderizado.py
+
 ```py
 # ============================================================================
 # ARCHIVO: renderizado.py
@@ -415,6 +429,8 @@ def dibujar_enemigos(ventana, imagen_enemigo, enemigos):
         ventana.blit(imagen_enemigo, (enemigo.x, enemigo.y))
 
 ```
+## ARCHIVO: principal.py
+
 ```py
 # ============================================================================
 # ARCHIVO: principal.py
