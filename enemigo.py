@@ -5,7 +5,7 @@
 Módulo de gestión de enemigos.
 Controla la generación, actualización y movimiento de enemigos.
 """
-import pygame
+import pygame as pg
 import random
 from variables import (
     INTERVALO_GENERACION_ENEMIGO,
@@ -23,11 +23,11 @@ def generar_enemigo(estado):
     Args:
         estado (dict): Diccionario con el estado actual del juego.
     """
-    tiempo_actual = pygame.time.get_ticks()
-    
+    tiempo_actual = pg.time.get_ticks()
+
     if tiempo_actual - estado['ultimo_enemigo'] > INTERVALO_GENERACION_ENEMIGO:
         x_enemigo = random.randint(0, ANCHO_VENTANA - TAMANO_ENEMIGO - 10)
-        enemigo = pygame.Rect(x_enemigo, -40, TAMANO_ENEMIGO, TAMANO_ENEMIGO)
+        enemigo = pg.Rect(x_enemigo, -40, TAMANO_ENEMIGO, TAMANO_ENEMIGO)
         estado['enemigos'].append((enemigo, VELOCIDAD_ENEMIGO))
         estado['ultimo_enemigo'] = tiempo_actual
 
