@@ -1,21 +1,21 @@
-# 🎮 Proyecto Pygame - Clase: Sonidos y Retroalimentación Visual Básica
+#  Proyecto Pygame - Clase: Sonidos y Retroalimentación Visual Básica
 
-## 📚 Descripción del Proyecto
+##  Descripción del Proyecto
 
 Juego de naves espaciales desarrollado en Python utilizando Pygame, que implementa sistema de audio con `pygame.mixer` y retroalimentación visual avanzada. El proyecto está completamente modularizado siguiendo buenas prácticas de programación.
 
 ---
 
-## 🎯 Objetivos de la Clase
+##  Objetivos de la Clase
 
 ### **Tema:** Sonidos y Retroalimentación Visual Básica
 
 Este proyecto implementa los conceptos fundamentales de la clase:
 
-1. ✅ **Sistema de Audio con pygame.mixer**
-2. ✅ **Retroalimentación Visual Dinámica**
-3. ✅ **Sincronización Audio-Visual**
-4. ✅ **Interfaz de Usuario Interactiva**
+1.  **Sistema de Audio con pygame.mixer**
+2.  **Retroalimentación Visual Dinámica**
+3.  **Sincronización Audio-Visual**
+4.  **Interfaz de Usuario Interactiva**
 
 ---
 
@@ -57,14 +57,14 @@ reproducir_efecto(sonido, volumen=0.5)  # Volumen de 0.0 a 1.0
 ```
 
 ### **5. Funciones de Audio Implementadas**
-- ✅ `reproducir_musica_fondo()` - Música en loop infinito
-- ✅ `reproducir_efecto()` - Efectos de sonido con volumen ajustable
-- ✅ `detener_musica()` - Control de música
-- ✅ `pausar_musica()` / `reanudar_musica()` - Control avanzado
+-  `reproducir_musica_fondo()` - Música en loop infinito
+-  `reproducir_efecto()` - Efectos de sonido con volumen ajustable
+-  `detener_musica()` - Control de música
+-  `pausar_musica()` / `reanudar_musica()` - Control avanzado
 
 ---
 
-## 🎨 Retroalimentación Visual Implementada
+##  Retroalimentación Visual Implementada
 
 ### **1. Cambios de Color en Respuesta a Eventos**
 
@@ -108,11 +108,11 @@ FUENTE_GAME_OVER = pg.font.Font(None, 72)
 ```
 
 #### **Mensajes Mostrados:**
-- ✅ **Vidas restantes** (esquina superior izquierda)
-- ✅ **Puntuación actual** (debajo de vidas)
-- ✅ **"GAME OVER"** (pantalla completa)
-- ✅ **Puntuación final** (al morir)
-- ✅ **"Presiona R para reiniciar"** (instrucciones)
+-  **Vidas restantes** (esquina superior izquierda)
+-  **Puntuación actual** (debajo de vidas)
+-  **"GAME OVER"** (pantalla completa)
+-  **Puntuación final** (al morir)
+-  **"Presiona R para reiniciar"** (instrucciones)
 
 ### **4. Animaciones Implementadas**
 
@@ -150,7 +150,7 @@ enemigo.y += vel
 
 ---
 
-## 🎪 Sincronización Audio-Visual
+##  Sincronización Audio-Visual
 
 ### **Eventos Sincronizados Implementados:**
 
@@ -184,52 +184,52 @@ pygame_base_3ros/
 │   ├── enemigo.png                 # Sprite del enemigo (50x50)
 │   └── icono.png                   # Icono de la ventana
 │
-├── actualizacion.py                 # ⚙️ Lógica de colisiones y puntos
-├── audio.py                         # 🔊 Sistema de audio (pygame.mixer)
-├── enemigo.py                       # 👾 Generación y movimiento de enemigos
-├── eventos.py                       # ⌨️ Procesamiento de entrada del usuario
-├── init_pygame.py                   # 🎬 Inicialización de Pygame
-├── movimientos.py                   # 🎮 Control del jugador
-├── principal.py                     # 🚀 Bucle principal del juego
-├── recursos.py                      # 📦 Carga de imágenes
-├── renderizado.py                   # 🖼️ Renderizado y HUD
-├── variables.py                     # 📊 Constantes y estado del juego
-└── README.md                        # 📖 Este archivo
+├── actualizacion.py                 #  Lógica de colisiones y puntos
+├── audio.py                         #  Sistema de audio (pygame.mixer)
+├── enemigo.py                       #  Generación y movimiento de enemigos
+├── eventos.py                       #  Procesamiento de entrada del usuario
+├── init_pygame.py                   #  Inicialización de Pygame
+├── movimientos.py                   #  Control del jugador
+├── principal.py                     #  Bucle principal del juego
+├── recursos.py                      #  Carga de imágenes
+├── renderizado.py                   #  Renderizado y HUD
+├── variables.py                     #  Constantes y estado del juego
+└── README.md                        #  Este archivo
 ```
 
 ---
 
-## 🎓 Conceptos de la Clase Aplicados
+##  Conceptos de la Clase Aplicados
 
 ### **1. pygame.mixer para Manejo de Audio**
-- ✅ `pygame.mixer.init()` - Inicialización del sistema
-- ✅ `pygame.mixer.Sound()` - Carga de efectos de sonido
-- ✅ `pygame.mixer.music` - Gestión de música de fondo
-- ✅ `.play()`, `.stop()`, `.set_volume()` - Control de reproducción
+-  `pygame.mixer.init()` - Inicialización del sistema
+-  `pygame.mixer.Sound()` - Carga de efectos de sonido
+-  `pygame.mixer.music` - Gestión de música de fondo
+-  `.play()`, `.stop()`, `.set_volume()` - Control de reproducción
 
 **Archivos involucrados:** `audio.py`, `principal.py`, `eventos.py`, `actualizacion.py`
 
 ### **2. Retroalimentación Visual Básica**
-- ✅ **Cambios de color:** Texto blanco (normal), rojo (Game Over)
-- ✅ **pygame.draw:** Superficies y overlays con transparencia
-- ✅ **pygame.font:** HUD con vidas, puntos y mensajes
-- ✅ **Animaciones:** Desaparición, invulnerabilidad, movimiento
+-  **Cambios de color:** Texto blanco (normal), rojo (Game Over)
+-  **pygame.draw:** Superficies y overlays con transparencia
+-  **pygame.font:** HUD con vidas, puntos y mensajes
+-  **Animaciones:** Desaparición, invulnerabilidad, movimiento
 
 **Archivos involucrados:** `renderizado.py`, `actualizacion.py`
 
 ### **3. Práctica Guiada Implementada**
-- ✅ ~~Programa que reproduce sonido al presionar tecla~~ → **Disparo con ESPACIO**
-- ✅ ~~Cambiar color de rectángulo en evento~~ → **Overlay oscuro en Game Over**
-- ✅ ~~Mostrar texto de retroalimentación~~ → **HUD completo + mensajes**
-- ✅ ~~Sincronización audio-visual~~ → **6 eventos sincronizados**
+-  ~~Programa que reproduce sonido al presionar tecla~~ → **Disparo con ESPACIO**
+-  ~~Cambiar color de rectángulo en evento~~ → **Overlay oscuro en Game Over**
+-  ~~Mostrar texto de retroalimentación~~ → **HUD completo + mensajes**
+-  ~~Sincronización audio-visual~~ → **6 eventos sincronizados**
 
 ### **4. Ejercicio Práctico Ampliado**
-- ✅ ~~Clic produce sonido y cambio visual~~ → **Sistema completo de eventos**
-- ✅ **Extra:** Sistema de vidas, puntos, invulnerabilidad, Game Over
+-  ~~Clic produce sonido y cambio visual~~ → **Sistema completo de eventos**
+-  **Extra:** Sistema de vidas, puntos, invulnerabilidad, Game Over
 
 ---
 
-## 🚀 Instalación y Ejecución
+##  Instalación y Ejecución
 
 ### **Requisitos:**
 ```bash
@@ -253,7 +253,7 @@ python principal.py
 
 ---
 
-## 🎮 Controles del Juego
+##  Controles del Juego
 
 | Tecla | Acción |
 |-------|--------|
@@ -269,14 +269,14 @@ python principal.py
 ## 🎯 Mecánicas del Juego
 
 ### **Sistema de Puntuación:**
-- ✅ Cada enemigo destruido: **+10 puntos**
-- ✅ Puntuación visible en HUD
+-  Cada enemigo destruido: **+10 puntos**
+-  Puntuación visible en HUD
 
 ### **Sistema de Vidas:**
-- ✅ Vidas iniciales: **3**
-- ✅ Colisión con enemigo: **-1 vida** (🔊 sonido de daño)
-- ✅ Invulnerabilidad: **2 segundos** (jugador desaparece)
-- ✅ Vidas = 0: **Game Over** (🔊 música especial)
+-  Vidas iniciales: **3**
+-  Colisión con enemigo: **-1 vida** (🔊 sonido de daño)
+-  Invulnerabilidad: **2 segundos** (jugador desaparece)
+-  Vidas = 0: **Game Over** (🔊 música especial)
 
 ### **Sistema de Audio:**
 | Evento | Sonido | Volumen |
@@ -290,28 +290,28 @@ python principal.py
 
 ---
 
-## 💡 Características Técnicas
+##  Características Técnicas
 
 ### **Modularización:**
-- ✅ **10 módulos** separados por responsabilidad
-- ✅ Alias `pg` para pygame (código más limpio)
-- ✅ Docstrings en todas las funciones
-- ✅ Manejo de errores (archivos faltantes)
+-  **10 módulos** separados por responsabilidad
+-  Alias `pg` para pygame (código más limpio)
+-  Docstrings en todas las funciones
+-  Manejo de errores (archivos faltantes)
 
 ### **Optimizaciones:**
-- ✅ FPS fijo: **60**
-- ✅ Gestión eficiente de listas (proyectiles, enemigos)
-- ✅ Recursos cargados una sola vez al inicio
+-  FPS fijo: **60**
+-  Gestión eficiente de listas (proyectiles, enemigos)
+-  Recursos cargados una sola vez al inicio
 
 ### **Retroalimentación Visual Avanzada:**
-- ✅ HUD siempre visible
-- ✅ Overlay de Game Over con transparencia
-- ✅ Fuentes de diferentes tamaños (36px y 72px)
-- ✅ Sistema de visibilidad del jugador
+-  HUD siempre visible
+-  Overlay de Game Over con transparencia
+-  Fuentes de diferentes tamaños (36px y 72px)
+-  Sistema de visibilidad del jugador
 
 ---
 
-## 📝 Preguntas Orientadoras Respondidas
+##  Preguntas Orientadoras Respondidas
 
 ### **¿Qué papel juegan los sonidos en la experiencia de un videojuego?**
 
@@ -342,7 +342,7 @@ python principal.py
 
 ---
 
-## 🎨 Recursos Necesarios
+##  Recursos Necesarios
 
 ### **Archivos de Audio (audios/):**
 Descarga desde: [Freesound.org](https://freesound.org), [Pixabay](https://pixabay.com/sound-effects), [Mixkit](https://mixkit.co)
@@ -361,16 +361,13 @@ Buscar:
 
 ---
 
-## 👨‍💻 Autor
+##  Autor
 
 **Proyecto Educativo** - Clase de Videojuegos 3ros
 **Tema:** Sonidos y Retroalimentación Visual Básica con Pygame
 
 ---
 
-## 📄 Licencia
-
-Este proyecto es de uso educativo libre.
 
 ---
 
@@ -383,7 +380,7 @@ Este proyecto es de uso educativo libre.
 
 ---
 
-## ✨ Conceptos Clave Demostrados
+##  Conceptos Clave Demostrados
 
 ```python
 # 1. Inicialización de audio
@@ -415,4 +412,4 @@ if condicion:
 
 ---
 
-**¡Proyecto completo y funcional! 🎉**
+**¡Proyecto completo y funcional! **
